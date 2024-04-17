@@ -1,0 +1,48 @@
+<!--Create an HTML file contact-us-form.html, put appropriate title, put “Contact Us” heading.-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Contact-us-form</title>
+        <style>
+            .form{
+                background: #eee;
+                display: inline-block;
+                }
+            .span{
+                    display:block;
+                    width: 80px;
+                    background: #eee;
+                    margin: 10px 3px 3px 8px;
+                    display: inline-block;
+                }
+            .select{
+                margin: 1px;
+                }
+            .submit{
+                display: block;
+                margin: 10px 0px 12px 40px;
+                width: 80px;
+                height: 30px;
+                }
+        </style>
+    </head>
+    <body>
+        <h1><strong>Contact Us</strong></h1>
+        <form class="form">
+            <span class="span">First name:</span> 
+            <input type="text" name="firstname"><br>
+            <span class="span">Last name:</span>
+            <input type="text" name="lastname"><br>
+            <span class="span">Email:</span>
+            <input type="email" name="email"><br>
+            <span class="span">Town:</span>
+            <select name="town" class="select">
+                <option value="1">Stockholm</option>
+                <option value="2">Göteborg</option>
+                <option value="3">Malmö</option>
+            </select>
+            <input type="submit" value="submit" class="submit">
+          </form> 
+    </body>
+</html>
