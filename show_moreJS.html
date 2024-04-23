@@ -1,0 +1,26 @@
+<!-- Write a JS function that expands a hidden section of text when a link is clicked. The link should disappear as the rest of the text shows up. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Show more text</title>
+    </head>
+    <body>
+       
+        Welcome to the "Show More Text Example"
+        <a href="#" id="more" onclick="showText()">Read More...</a>
+        <span id="text" style="display: none">Welcome to the "Show More Text Example"</span>
+        
+        <script>
+            function showText() {
+                text = ""
+                for(i=0; i<10; i++){
+                    for(var i=0; i<10; i++){ 
+                    text += document.getElementById("text").textContent + "<br>";
+                }
+                document.getElementById("more").innerHTML = text;
+                }
+            }
+        </script>
+    </body>
+</html>
