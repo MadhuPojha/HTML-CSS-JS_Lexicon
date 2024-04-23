@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sum of two numbers</title>
+    </head>
+    <body>
+        <input type="text" id="num1"/> + <br>
+        <input type="text" id="num2"/> = <br>
+        <input type="text" id="sum" readonly="readonly"/>
+        <input type="button" value="Calculate the sum" onclick="calc()"/>
+        
+        <script>
+            function calc() {
+                number1 = Number(document.querySelector("#num1").value);
+                number2 = Number(document.querySelector("#num2").value);
+                sum = number1 + number2
+                document.getElementById("sum").value = sum;
+            }
+        </script>
+    </body>
+</html>
