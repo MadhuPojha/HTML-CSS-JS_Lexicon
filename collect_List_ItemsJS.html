@@ -1,1 +1,28 @@
 <!-- Collect List Items: Write a JS function that scans a given HTML list and appends all collected list items’ text to a text area on the same page when the user clicks on a button. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Collect-list-items</title>
+    </head>
+    <body>
+       
+        <ul id="items">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            </ul>
+            <textarea id="result"></textarea>
+            <br>
+            <button onclick="extractText()">Extract Text</button>
+            <script>
+            function extractText() {
+                listItems = document.querySelectorAll("#items li")
+                listResult = document.getElementById("result")
+                for(list of listItems){
+                    listResult.value += list.textContent + "\n";
+                }
+            }
+        </script>
+    </body>
+</html>
