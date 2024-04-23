@@ -3,7 +3,6 @@ The class needs to have getter and setter methods for its diameter – the sette
 calculate the diameter and return it. The circle also has a method area(), which calculates and returns its area.  */
 
 class Circle {
-    pi = 3.14
     constructor(radius){
         this.radius = radius;
     }
@@ -15,7 +14,7 @@ class Circle {
         this.radius = value / 2
     }
     get area() {
-        return this.pi * this.radius * this.radius;
+        return Math.PI * this.radius * this.radius;
       }
 }
 let c = new Circle(2);
