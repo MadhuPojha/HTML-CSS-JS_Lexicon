@@ -1,0 +1,30 @@
+<!-- Stopwatch: Write a JS program that implements a web timer that supports minutes and seconds. The user should be able to control it with buttons. 
+Clicking [Start] resets the timer back to zero. Only one of the buttons should be enabled at a time (you cannot stop the timer if it’s not running). -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>List-of-items</title>
+    </head>
+    <body>
+
+        <div id="time" style="border:3px solid blue; text-align:center; font-size:2em; margin-bottom:10px">00:00</div>
+        <button id="startBtn">Start</button>
+        <button id="stopBtn" disabled="true">Stop</button>
+        <script>
+            window.onload = function () {
+                stopWatch();
+            }
+        </script>
+        <script>
+        
+        function stopWatch(){
+            startBtn = document.getElementById("startBtn")
+            stopBtn = document.getElementById("stopBtn")
+        }
+        
+        </script>
+        
+    </body>
+</html>
